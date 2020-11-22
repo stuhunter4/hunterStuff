@@ -48,4 +48,48 @@ function runEnter() {
             cell.text(value);
         });
     });
+
+    // use the map method with the arrow function to return all the filtered week numbers.
+    var weeks = filteredData.map(county => county["week number"]);
+
+    // use the map method with the arrow function to return all the filtered average cases per 100,000.
+    var rate = filteredData.map(county => county["cases per cap"]);
+    // ..and for deaths per capita
+    var drate = filteredData.map(county => county["deaths per cap"]);
+
+    // create traces
+    var trace = {
+        x: weeks,
+        y: rate,
+        type: "scatter"
+    };
+
+    var trace2 = {
+        x: weeks,
+        y: drate,
+        type: "scatter"
+    };
+
+
+    // create the data arrays for our plots
+    var data = [trace];
+    var data2 = [trace2];
+
+    // define our plot layouts
+    var layout = {
+        title: "Seven-Day Average COVID-19 Cases",
+        xaxis: { title: "Weeks: March 18, 2020 - November 17, 2020" },
+        yaxis: { title: "Daily Rate per 100,000"}
+    };
+
+    var layout2 = {
+        title: "Seven-Day Average COVID-19 Deaths",
+        xaxis: { title: "Weeks: March 18, 2020 - November 17, 2020" },
+        yaxis: { title: "Daily Deaths per 100,000"}
+    };
+
+    // plot the charts to a div tag with id "plot" and "plot2"
+    Plotly.newPlot("plot", data, layout);
+    Plotly.newPlot("plot2", data2, layout2);
+
 };
