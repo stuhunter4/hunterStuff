@@ -29,12 +29,12 @@
       min-height: 200px;
     }
 
-    a {
+    .white {
         color: white;
     }
     
-    h4 {
-        color: white;
+    .center {
+      text-align: center;
     }
 
     /* Set black background color, white text and some padding */
@@ -63,23 +63,23 @@
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-2 sidenav" id="duck">
-      <h4>Stuart Hunter</h4>
+      <h4 class="white">PROJECTS</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="https://stuhunter4.github.io/hunterStuff/index.html">Home</a></li>
-        <li><a href="https://stuhunter4.github.io/hunterStuff/bubble_chart/bubble.html">Political Division Chart</a></li>
-        <li><a href="https://stuhunter4.github.io/hunterStuff/county_data/county_data.html">California COVID-19 Data</a></li>
-        <li><a href="https://stuhunter4.github.io/hunterStuff/choropleth_map/choropleth.html">California Choropleth Map</a></li>
+        <li class="active"><a class="white" href="https://stuhunter4.github.io/hunterStuff/index.html">Home</a></li>
+        <li><a class="white" href="https://stuhunter4.github.io/hunterStuff/bubble_chart/bubble.html">Political Division Chart</a></li>
+        <li><a class="white" href="https://stuhunter4.github.io/hunterStuff/county_data/county_data.html">California COVID-19 Data</a></li>
+        <li><a class="white" href="https://stuhunter4.github.io/hunterStuff/choropleth_map/choropleth.html">California Choropleth Map</a></li>
       </ul><br>
     </div>
 
     <div class="col-sm-10">
-      <h4><small>SOME SORT OF REPORT TITLE</small></h4>
+      <h4><small>STUART HUNTER</small></h4>
       <hr>
       
       
       <div class="jumbotron">
-        <div class="container text-center">
-          <h1>Jumbo placeholder</h1>      
+        <div class="container text-center white">
+          <h1>hunter_stuff</h1>      
           <p>stuff, stuff & stuff</p>
         </div>
       </div>
@@ -88,13 +88,14 @@
       <div class="row">
         <div class="col-sm-2">
           <div class="well">
-           <p>Title 1</p>
-           <img src="./IMG_profile.jpg" class="img-circle" height="100" width="100" alt="Avatar">
+           <p class="center">Stuart Hunter</p>
+           <img src="./IMG_profile.jpg" class="img-circle img-responsive" height=100% width=100% alt="Avatar">
+        
           </div>
         </div>
         <div class="col-sm-10">
           <div class="well">
-            <p>whole bunch of text describing project</p>
+            <p>Brand Statement, contact info and links here.</p>
           </div>
         </div>
       </div>
@@ -111,26 +112,16 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="./county_data/vis/Alameda_cases.jpg" alt="Image">
+                <img src="./county_data/vis/Butte_cases.jpg" alt="Image">
                 <div class="carousel-caption">
-                  <h3>Alameda County</h3>
-                  <p>description</p>
+                  <h3>Butte County</h3>
                 </div>      
               </div>
       
               <div class="item">
-                <img src="./county_data/vis/San Francisco_cases.jpg" alt="Image">
+                <img src="./county_data/vis/Alameda_cases.jpg" alt="Image">
                 <div class="carousel-caption">
-                  <h3>San Francisco County</h3>
-                  <p>more description</p>
-                </div>      
-              </div>
-
-              <div class="item">
-                <img src="./county_data/vis/Butte_cases.jpg" alt="Image">
-                <div class="carousel-caption">
-                  <h3>Butte County</h3>
-                  <p>more description</p>
+                  <h3>Alameda County</h3>
                 </div>      
               </div>
 
@@ -138,15 +129,20 @@
                 <img src="./county_data/vis/Contra Costa_cases.jpg" alt="Image">
                 <div class="carousel-caption">
                   <h3>Contra Costa County</h3>
-                  <p>more description</p>
                 </div>      
               </div>
 
               <div class="item">
                 <img src="./county_data/vis/Santa Clara_cases.jpg" alt="Image">
                 <div class="carousel-caption">
-                  <h3>Santa Clara</h3>
-                  <p>more description</p>
+                  <h3>Santa Clara County</h3>
+                </div>      
+              </div>
+
+              <div class="item">
+                <img src="./county_data/vis/San Francisco_cases.jpg" alt="Image">
+                <div class="carousel-caption">
+                  <h3>San Francisco County</h3>
                 </div>      
               </div>
             </div>
@@ -164,13 +160,13 @@
         </div>
         <div class="col-sm-4">
           <div class="well">
-            <p>Some text..</p>
+            <h3>Seven-day average COVID-19 cases for select counties in the region</h3>
           </div>
           <div class="well">
-             <p>More stuff</p>
+             <p>Sources: California Open Data and American Community Survey 2014-2018</p>
           </div>
           <div class="well">
-             <p>Etc.</p>
+             <p>Updated: November 17, 2020</p>
           </div>
         </div>
       </div>
