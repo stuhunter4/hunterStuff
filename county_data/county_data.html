@@ -33,6 +33,16 @@
       padding: 15px;
     }
     
+    #table-area th {
+      text-align: center;
+    }
+
+    #table-area th:first-child,
+    #table-area th:nth-child(2),
+    #table-area th:nth-child(6) {
+      min-width: 70px;
+    }
+
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -64,8 +74,56 @@
           <hr>
           <div class="well">
               <h3>Dashboard</h3>
-              <p>Some text..</p>
+              <p>Last updated: November 17, 2020.</p>
           </div>
+
+          <div class="well">
+            <h2>Imitation California COVID-19 Tracker (not official)</h2>
+            <p>This dashboard is a student project to emulate the COVID-19 tracker on kqed.org, for learning purposes only.</p>
+            <p>Use the dropdown menu to select the county in California.</p>
+            <p>Sources: California Open Data Portal and the 2014-2018 American Community Survey.</p>                              
+            <form>
+              <div class="form-group">
+                <label for="sel1">Select list (select one):</label>
+                <select class="form-control" id="sel">
+                  <option>Alameda</option>
+                  <option>Alpine</option>
+                  <option>Amador</option>
+                  <option>Butte</option>
+                </select>
+                <br>
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="well">
+                <div id="table-area" class="">
+                  <table id="ufo-table" class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="table-head">County</th>
+                        <th class="table-head">Week</th>
+                        <th class="table-head">Week #</th>
+                        <th class="table-head">Total Cases</th>
+                        <th class="table-head">Population</th>
+                        <th class="table-head">Average Cases</th>
+                        <th class="table-head">Average per 100,000</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="well">
+                <p>Description</p> 
+              </div>
+            </div>
+          </div>
+
         </div>
     </div>
 </div>          
@@ -89,6 +147,8 @@
         </div>
     </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
 </body>
 </html>      
