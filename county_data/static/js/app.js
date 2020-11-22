@@ -88,8 +88,10 @@ function runEnter() {
         yaxis: { title: "Daily Deaths per 100,000"}
     };
 
+    var config = {responsive: true}
+
     // plot the charts to a div tag with id "plot" and "plot2"
-    Plotly.newPlot("plot", data, layout);
-    Plotly.newPlot("plot2", data2, layout2);
+    Plotly.newPlot("plot", data, layout, config);
+    Plotly.newPlot("plot2", data2, layout2, config);
 
 };
