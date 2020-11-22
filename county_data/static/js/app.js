@@ -2,10 +2,11 @@
 var tableData = data;
 
 // select the dropdown selection
-var form = d3.select("#form");
+var slist = d3.select("#slist");
 
 // create event handlers for selecting a list option
-form.on("submit", runEnter);
+slist.on("change", runEnter);
+
 
 // create the event handler function to run both form events
 function runEnter() {
@@ -14,7 +15,7 @@ function runEnter() {
     d3.event.preventDefault();
 
     // select the input element and get the raw HTML node
-    var inputElement = d3.select("option");
+    var inputElement = d3.select("#sel");
 
     // get the value property of the input element
     var inputValue = inputElement.property("value");
