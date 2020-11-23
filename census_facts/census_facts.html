@@ -22,6 +22,10 @@
         color: white;
     }
     
+    #hide_me {
+      display: none;
+    }
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -85,7 +89,7 @@
           <hr>
           <div class="well">
               <h3>California County Data</h3>
-              <p>Source: American Community Survey, 2018</p>
+              <p>Source: American Community Survey, 2014-2018</p>
               <p><a class="btn btn-secondary" href="https://www.census.gov/programs-surveys/acs/" target="_blank" role="button">View details &raquo;</a></p>
           </div>
 
@@ -168,6 +172,7 @@
                   <table id="ufo-table" class="table table-striped">
                     <thead>
                       <tr>
+                        <th id = "hide_me" class="table-head"> </th>
                         <th class="table-head"> </th>
                         <th id="demo1" class="table-head"> </th>
                       </tr>
@@ -202,6 +207,8 @@
         </div>
     </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
 </body>
 </html>      
