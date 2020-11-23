@@ -52,4 +52,16 @@ function runEnter() {
     // create the table name based on our list selection
     document.getElementById("demo1").innerHTML = `${inputValue} County`;
 
+    // grab the table
+    var tble = document.getElementById("edit");
+    // getting the rows in table
+    var row1 = tble.rows;
+    // removing the column at index(0)
+    var a = 0;
+    for (var b = 0; b < row1.length; b++) {
+        // deleting the a'th cell of each row
+        row1[b].deleteCell(a);
+    }
+    
+
 };
