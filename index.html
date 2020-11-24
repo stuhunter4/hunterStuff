@@ -14,14 +14,14 @@
     /* Set gray background color, image and 100% height */
     .sidenav {
       background-color: #062d68;
-      /* background-image: url("IMG_0213_ed.jpg"); */
       height: 100%;
     }
     
-    /* Remove the jumbotron's default bottom margin */ 
+    /* Remove the jumbotron's default bottom margin, save color 6688a7*/ 
     .jumbotron {
       margin-bottom: 0;
       background-color: #6688a7;
+      /*background-image: url("navbar.gif");*/
     }
 
     .carousel-inner img {
@@ -33,6 +33,14 @@
         color: white;
     }
     
+    .blue {
+      color: #062d68
+    }
+
+    .whiteb {
+      background-color: white;
+    }
+
     .center {
       text-align: center;
     }
@@ -80,18 +88,16 @@
       
       <div class="jumbotron">
         <div class="container text-center white">
-          <h1>hunter_stuff</h1>      
-          <p>stuff, stuff & stuff</p>
+          <h1>Stuart Hunter</h1>      
+          <p>Data Analyst</p>
         </div>
       </div>
       <br>
 
       <div class="row">
         <div class="col-sm-2">
-          <div class="well">
-           <p class="center">Stuart Hunter</p>
+          <div class="card">
            <img src="./IMG_profile.jpg" class="img-circle img-responsive" height=100% width=100% alt="Avatar">
-        
           </div>
         </div>
         <div class="col-sm-10">
@@ -100,7 +106,7 @@
           </div>
         </div>
       </div>
-      
+      <br>
       <div class="row">
         <div class="col-sm-8">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -162,48 +168,48 @@
         <div class="col-sm-4">
           <div class="well">
             <h3>Seven-day average COVID-19 cases for select counties in the region</h3>
+            <p>Sources: California Open Data and American Community Survey 2014-2018</p>
+            <p>Updated: November 17, 2020</p>
           </div>
           <div class="well">
-             <p>Sources: California Open Data and American Community Survey 2014-2018</p>
+             <p>Some text..</p>
           </div>
-          <div class="well">
-             <p>Updated: November 17, 2020</p>
+          
+          <div class="panel panel-primary">
+            <div class="panel-heading">HEADER..</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">footer text..</div>
           </div>
+
         </div>
       </div>
-      <hr>
-      
-      
-      <div class="container text-center">    
-        <h3>Title for this section</h3>
-        <br>
-        <div class="row">
-          <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            <p>Current Project</p>
           </div>
-          <div class="col-sm-3"> 
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            <p>Project 2</p>    
-          </div>
-          <div class="col-sm-3">
-            <div class="well">
-             <p>Some text..</p>
-            </div>
-            <div class="well">
-             <p>Some text..</p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="well">
-             <p>Some text..</p>
-            </div>
-            <div class="well">
-             <p>Some text..</p>
-            </div>
-          </div>  
         </div>
-        
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Some text..</p>
+          </div>
+          <div class="well">
+            <p>Some text..</p>
+           </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Some text..</p>
+          </div>
+          <div class="well">
+            <p>Some text..</p>
+           </div>
+        </div>
       </div>
     </div>
         
@@ -212,21 +218,8 @@
 
 <footer class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 ml-md-auto">
-            <p><a href="#section2">Contact</a></p>
-            <p>Contact</p>
-        </div>
-        <div class="col-sm-3 ml-md-auto">
-            <p>Contact</p>
-            <p>Contact</p>
-        </div>
-        <div class="col-sm-3 ml-md-auto">
-            <p>Contact</p>
-            <p>Contact</p>
-        </div>
-        <div class="col-sm-3 ml-md-auto">
-            <p>Contact</p>
-            <p>Contact</p>
+        <div class="col-sm-12 ml-md-auto">
+            <p class="text-center"><a class="white" href="#section2">LinkedIn</a>  ·  <a class="white" href="#section2">Github</a></p>
         </div>
     </div>
 </footer>
