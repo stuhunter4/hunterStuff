@@ -78,13 +78,13 @@ function runEnter() {
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
-        xaxis: { title: "Weeks: March 18, 2020 - November 17, 2020" },
+        xaxis: { title: "Weeks: March 18, 2020 - November 24, 2020" },
         yaxis: { title: "Daily Rate per 100,000"}
     };
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
-        xaxis: { title: "Weeks: March 18, 2020 - November 17, 2020" },
+        xaxis: { title: "Weeks: March 18, 2020 - November 24, 2020" },
         yaxis: { title: "Daily Deaths per 100,000"}
     };
 
