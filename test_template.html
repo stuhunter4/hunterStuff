@@ -13,7 +13,10 @@
       margin-bottom: 0;
       border-radius: 0;
     }
-
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
     .fonts14 {
       font-size: 14pt;
     }
@@ -92,6 +95,7 @@
       .vanish {
         display: none;
       }
+      .row.content {height: auto;}
     }
 
   </style>
@@ -101,7 +105,7 @@
   
   <div class="wrapper">
     <div class="container-fluid">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-fixed-top purp">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -109,12 +113,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="https://stuhunter4.github.io/hunterStuff/index.html">STUART HUNTER</a>
+            <a class="navbar-brand white" href="https://stuhunter4.github.io/hunterStuff/index.html">STUART HUNTER</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="white fonts14" href="#">LinkedIn</a></li>
-              <li><a class="white fonts14" href="#">Github</a></li>
+              <li><a class="white fonts14" href="#">About Me</a></li>
+              <li><a class="white fonts14" href="https://www.linkedin.com/in/smhunterart/">LinkedIn</a></li>
+              <li><a class="white fonts14" href="https://github.com/stuhunter4">Github</a></li>
             </ul>
           </div>
         </div>
@@ -124,21 +129,21 @@
           <div class="col-sm-6">
             <div id="jimage1" class="jumbotron">
                 <div class="container text-center white">      
-                  <p><a class="white viol space" href="#">CA COVID-19 Data</a></p>
+                  <p><a class="white viol space" href="https://stuhunter4.github.io/hunterStuff/county_data/county_data.html">CA COVID-19 Data</a></p>
                 </div>
               </div>
           </div>
           <div class="col-sm-3">
             <div id="jimage2" class="jumbotron">
                 <div class="container text-center white vanish">      
-                  <p><a class="white viol space" href="#">CA Quick Facts</a></p>
+                  <p><a class="white viol space" href="https://stuhunter4.github.io/hunterStuff/census_facts/census_facts.html">CA Quick Facts</a></p>
                 </div>
               </div>
           </div>
           <div class="col-sm-3">
             <div id="jimage3" class="jumbotron">
                 <div class="container text-center vanish">
-                  <p><a class="white viol space" href="#">Stock Tracker</a></p>
+                  <p><a class="white viol space" href="#">Coming Soon</a></p>
                 </div>
               </div>
           </div>
@@ -151,12 +156,24 @@
             <div class="col-sm-8">
               <div class="row">
                   <div class="col-sm-4">
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive rcorners" style="width:100%" alt="Image">
+                    <img src="CA_COVID_PopvEd_Bubble.jpg" class="img-responsive rcorners border" style="width:100%" alt="Image">
                   </div>
                   <div class="col-sm-8">
                     <div class="card">
-                      <h4><a class="white lpurp space" href="#">JOBS SCRAPE</a></h4>
-                      <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. </p>
+                      <h4><a class="white lpurp space" href="https://stuhunter4.github.io/hunterStuff/bubble_chart/bubble.html">Political Differences in California</a></h4>
+                      <p>Bubble chart exploring whether common claims about political differences in the United States, regarding an educational or urban-rural divide, exists among California counties.</p>
+                    </div>
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col-sm-4">
+                    <img src="week_31.jpg" class="img-responsive rcorners" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card">
+                      <h4><a class="white green space" href="https://stuhunter4.github.io/hunterStuff/choropleth_map/choropleth.html">CA COVID-19 Choropleth Map</a></h4>
+                      <p>Animated choropleth map displaying average daily cases per 100,000 people in a week, since March.</p>
                     </div>
                   </div>
               </div>
@@ -167,42 +184,27 @@
                   </div>
                   <div class="col-sm-8">
                     <div class="card">
-                      <h4><a class="white green space" href="#">ETL</a></h4>
-                      <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. </p>
-                    </div>
-                  </div>
-              </div>
-              <br>
-              <div class="row">
-                  <div class="col-sm-4">
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive rcorners" style="width:100%" alt="Image">
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card">
-                      <h4><a class="white purp space" href="#">DASHBOARD</a></h4>
-                      <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. </p>
+                      <h4><a class="white purp space" href="#">Coming Soon</a></h4>
+                      <p>Description placeholder.</p>
                     </div>
                   </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card">
-                  <p class="fonts14">OTHER</p>
+                  <p class="fonts14">PROJECTS</p>
               </div>
               <div class="well purp">
-                  <p class="white">Python</p>
+                  <p><a class="white" href="#">Tracking COVID-19 Cases in San Francisco and Los Angeles Counties  &raquo;</a></p>
               </div>
               <div class="well viol">
-                  <p class="white">Pandas</p>
+                  <p><a class="white" href="#">Politics and Polls: 2016 vs. 2020 - ETL work   &raquo;</a></p>
               </div>
               <div class="well lpurp">
-                  <p class="white">Matplotlib</p>
+                  <p><a class="white" href="#">   &raquo;</a></p>
               </div>
               <div class="well green">
-                  <p class="white">SQL</p>
-              </div>
-              <div class="well dpurp">
-                  <p class="white">Javascript</p>
+                  <p><a class="white" href="#">   &raquo;</a></p>
               </div>
             </div>
         </div>
@@ -244,7 +246,7 @@
 <footer class="container-fluid">
   <div class="row">
       <div class="col-sm-12 ml-md-auto">
-          <p class="text-center fonts14"><a class="white" href="#section2">LinkedIn</a>  ·  <a class="white" href="#section2">Github</a></p>
+          <p class="text-center fonts14"><a class="white" href="https://www.linkedin.com/in/smhunterart/">LinkedIn</a>  ·  <a class="white" href="https://github.com/stuhunter4">Github</a></p>
       </div>
   </div>
 </footer>
