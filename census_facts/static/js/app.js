@@ -1,6 +1,10 @@
 // from data.js, assign data to a descriptive variable
 var tableData = data;
 
+// create graphs and table upon opening page
+// function is at the bottom, a reappropriation of runEnter
+runStart();
+
 // select the dropdown selection
 var slist = d3.select("#slist");
 
@@ -25,6 +29,53 @@ function runEnter() {
 
     // filter() uses input as its argument
     var filteredData = tableData.filter(ca => ca.County === inputValue);
+    // test
+    console.log(filteredData);
+
+    // create a reference to the table body
+    var tbody = d3.select("tbody");
+    // remove any children from the table
+    tbody.html("");
+
+    // loop through filtered data and console.log each report object
+    filteredData.forEach(function(caReport) {
+        console.log(caReport);
+        // append one table row 'tr' for each report object
+        var row = tbody.append("tr");
+
+        // use 'Object.entries' to console.log each report value
+        Object.entries(caReport).forEach(function([key, value]) {
+            console.log(key, value);
+            // use d3 to append 1 cell for each value in the report object (column)
+            var cell = row.append("td");
+            // use d3 to update each cell's text with report values
+            cell.text(value);
+        });
+    });
+
+    // create the table name based on our list selection
+    document.getElementById("demo1").innerHTML = `${inputValue} County`;
+
+    // grab the table
+    var tble = document.getElementById("edit");
+    // getting the rows in table
+    var row1 = tble.rows;
+    // removing the column at index(0)
+    var a = 0;
+    for (var b = 0; b < row1.length; b++) {
+        // deleting the a'th cell of each row
+        row1[b].deleteCell(a);
+    }
+    
+
+};
+
+function runStart() {
+    // first county
+    var firstCounty = "Alameda";
+ 
+    // filter() uses input as its argument
+    var filteredData = tableData.filter(ca => ca.County === firstCounty);
     // test
     console.log(filteredData);
 
