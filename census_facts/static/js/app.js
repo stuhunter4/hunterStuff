@@ -101,7 +101,7 @@ function runStart() {
     });
 
     // create the table name based on our list selection
-    document.getElementById("demo1").innerHTML = `${inputValue} County`;
+    document.getElementById("demo1").innerHTML = `${firstCounty} County`;
 
     // grab the table
     var tble = document.getElementById("edit");
