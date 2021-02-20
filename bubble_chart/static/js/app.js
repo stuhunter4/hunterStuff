@@ -42,4 +42,6 @@ var layout = {
     }
 }
 
-Plotly.newPlot('bubble', data, layout)
+var config = {responsive: true}
+
+Plotly.newPlot('bubble', data, layout, config)
