@@ -81,13 +81,13 @@ function runEnter() {
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
-        xaxis: { title: "Weeks: March 18, 2020 - February 16, 2021" },
+        xaxis: { title: "Weeks: March 18, 2020 - February 23, 2021" },
         yaxis: { title: "Daily Rate per 100,000"}
     };
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
-        xaxis: { title: "Weeks: March 18, 2020 - February 16, 2021" },
+        xaxis: { title: "Weeks: March 18, 2020 - February 23, 2021" },
         yaxis: { title: "Daily Deaths per 100,000"}
     };
 
@@ -157,13 +157,13 @@ function runStart() {
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
-        xaxis: { title: "Weeks: March 18, 2020 - February 16, 2021" },
+        xaxis: { title: "Weeks: March 18, 2020 - February 23, 2021" },
         yaxis: { title: "Daily Rate per 100,000"}
     };
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
-        xaxis: { title: "Weeks: March 18, 2020 - February 16, 2021" },
+        xaxis: { title: "Weeks: March 18, 2020 - February 23, 2021" },
         yaxis: { title: "Daily Deaths per 100,000"}
     };
 
