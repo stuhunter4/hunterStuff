@@ -70,27 +70,15 @@
       padding-top: 75px;
     }
 
+    #hide_me {
+      display: none;
+    }
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
-    }
-    
-    table {
-      font-family: arial, sans-serif;
-    }
-  
-    td, th {
-      border: 1px solid #e9e9e9;
-      text-align: left;
-      padding: 8px;
-    }
-  
-    #table-area th:first-child,
-    #table-area th:nth-child(2),
-    #table-area th:nth-child(6) {
-      min-width: 70px;
     }
 
     @media screen and (max-width: 1300px) {
@@ -99,7 +87,6 @@
       }
       .row.content {height: auto;}
     }
-
   </style>
 </head>
 <body>
@@ -126,58 +113,29 @@
       </nav>
       <div class="container-fluid padded">
         <div class="row content">
-          <div class="col-sm-2">
-            <div class="well dpurp white">
-              <h2>Migration out of California</h2>
-              <p>Dashboard exploring data on migration flow from California to other states.</p>
-              <h3>Flow To Other States</h3>
-              <form id="slist2">
-                <div class="form-group">
-                    <label for="sel1">Select a Year</label>
-                    <select class="form-control" id="sel1">
-                        <option>2010</option>
-                        <option>2011</option>
-                        <option>2012</option>
-                        <option>2013</option>
-                        <option>2014</option>
-                        <option>2015</option>
-                        <option>2016</option>
-                        <option>2017</option>
-                        <option>2018</option>
-                        <option>2019</option>                                
-                    </select>
-                    <br>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row container-fluid">
+                        <div class="col-sm-4">
+                            <div class="well dpurp white">
+                                <img src="profile_pic_122020.jpg" class="img-circle" style="width:100%" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="well">
+                              <p>Data analyst working primarily in Python and SQL, with a background in 3D modeling.  Trained at U.C. Berkeley Extension’s Data Analytics Boot Camp where I earned a certificate.  Seeking the opportunity to grow my abilities as much as possible, in a discipline that offers more than a lifetime’s worth of continuous improvement; gaining experience with large, rich datasets to meaningful effect and insights.  Dedicated team member with practice working well independently and collaborating as it comes; adapting well to novel tools and expectations over time.  Committed to producing quality work and learning to improve.</p>
+                            </div>
+                            <div class="well">
+                              <p>When time allows, I like catch a flick or take a hike on a long trail somewhere.</p>
+                          </div>
+                        </div>
+                    </div>
                 </div>
-              </form>
-              <p>Sources:<a href="https://data.ca.gov/dataset/covid-19-cases" target="_blank"> California Open Data Portal &raquo;</a></p>
-              <p><a href="https://www.census.gov/programs-surveys/acs/" target="_blank">2014-2018 American Community Survey. &raquo;</a></p>
-        
             </div>
-          </div>
-          <div class="col-sm-10">
-            <div class="row">
-              <div class="col-sm-7">
-                <div class="well">
-                  <h3></h3>
-                  <div id="choromap"></div>
-                  <p></p> 
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <div class="well">
-                  <h3></h3>
-                  <div id="linechart"></div>
-                  <p></p> 
-                </div>
-              </div>
-            </div>
-  
-          </div>
         </div>
       </div>
     </div>
   </div>  
-       
 <footer class="container-fluid">
   <div class="row">
       <div class="col-sm-12 ml-md-auto">
@@ -186,7 +144,5 @@
   </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-<script src="static/js/data.js"></script>
-<script src="static/js/app.js"></script>
 </body>
 </html>      
