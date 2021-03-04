@@ -62,11 +62,12 @@ function runEnter() {
     var trace1 = {
         x: weeks,
         y: face_shields,
+        fill: 'tozeroy',
         type: "scatter",
         name: 'Face Shields (Disposable)',
         title: 'Face Shields (Disposable)',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -74,12 +75,13 @@ function runEnter() {
     var trace2 = {
         x: weeks,
         y: surg_masks,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y2',
         type: "scatter",
         name: 'Surgical Masks',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -87,12 +89,13 @@ function runEnter() {
     var trace3 = {
         x: weeks,
         y: fit_test,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y3',
         type: "scatter",
         name: 'Fit Testing Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -100,12 +103,13 @@ function runEnter() {
     var trace4 = {
         x: weeks,
         y: cloth_masks,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y4',
         type: "scatter",
         name: 'Cloth Masks',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -113,12 +117,13 @@ function runEnter() {
     var trace5 = {
         x: weeks,
         y: gowns,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y5',
         type: "scatter",
         name: 'Surgical or Examination Gowns',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -126,12 +131,13 @@ function runEnter() {
     var trace6 = {
         x: weeks,
         y: gloves,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y6',
         type: "scatter",
         name: 'Examination Gloves',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -139,12 +145,13 @@ function runEnter() {
     var trace7 = {
         x: weeks,
         y: n95_resp,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y7',
         type: "scatter",
         name: 'N-95 Respirators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -152,12 +159,13 @@ function runEnter() {
     var trace8 = {
         x: weeks,
         y: hsanitizers,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y8',
         type: "scatter",
         name: 'Hand Sanitizers',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -165,12 +173,13 @@ function runEnter() {
     var trace9 = {
         x: weeks,
         y: wipes,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y9',
         type: "scatter",
         name: 'Wipes',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -178,12 +187,13 @@ function runEnter() {
     var trace10 = {
         x: weeks,
         y: other,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y10',
         type: "scatter",
         name: 'Other / None of the above',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -191,12 +201,13 @@ function runEnter() {
     var trace11 = {
         x: weeks,
         y: cleaning,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y11',
         type: "scatter",
         name: 'Cleaning Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -204,12 +215,13 @@ function runEnter() {
     var trace12 = {
         x: weeks,
         y: swabs,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y12',
         type: "scatter",
         name: 'Swabs',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -217,12 +229,13 @@ function runEnter() {
     var trace13 = {
         x: weeks,
         y: viral_testing,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y13',
         type: "scatter",
         name: 'Viral Testing Media',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -230,12 +243,13 @@ function runEnter() {
     var trace14 = {
         x: weeks,
         y: pharms,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y14',
         type: "scatter",
         name: 'Pharmaceuticals',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -243,12 +257,13 @@ function runEnter() {
     var trace15 = {
         x: weeks,
         y: shoe_covers,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y15',
         type: "scatter",
         name: 'Shoe Covers',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -256,12 +271,13 @@ function runEnter() {
     var trace16 = {
         x: weeks,
         y: test_kits,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y16',
         type: "scatter",
         name: 'Test Kits',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -269,12 +285,13 @@ function runEnter() {
     var trace17 = {
         x: weeks,
         y: kn95_resp,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y17',
         type: "scatter",
         name: 'KN95 Respirators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -282,12 +299,13 @@ function runEnter() {
     var trace18 = {
         x: weeks,
         y: coveralls,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y18',
         type: "scatter",
         name: 'Coveralls (Hospitals or EMS)',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -295,12 +313,13 @@ function runEnter() {
     var trace19 = {
         x: weeks,
         y: med_equip,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y19',
         type: "scatter",
         name: 'Medical Equipment',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -308,12 +327,13 @@ function runEnter() {
     var trace20 = {
         x: weeks,
         y: goggles,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y20',
         type: "scatter",
         name: 'Goggles',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -321,12 +341,13 @@ function runEnter() {
     var trace21 = {
         x: weeks,
         y: bedding_acc,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y21',
         type: "scatter",
         name: 'Bedding Accessories',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -334,12 +355,13 @@ function runEnter() {
     var trace22 = {
         x: weeks,
         y: lab_supp,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y22',
         type: "scatter",
         name: 'Lab Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -347,12 +369,13 @@ function runEnter() {
     var trace23 = {
         x: weeks,
         y: beds_cots,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y23',
         type: "scatter",
         name: 'Beds/Cots',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -360,12 +383,13 @@ function runEnter() {
     var trace24 = {
         x: weeks,
         y: body_bags,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y24',
         type: "scatter",
         name: 'Body Bags',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -373,12 +397,13 @@ function runEnter() {
     var trace25 = {
         x: weeks,
         y: lab_kit,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y25',
         type: "scatter",
         name: 'Lab Kit',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -386,12 +411,13 @@ function runEnter() {
     var trace26 = {
         x: weeks,
         y: vents,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y26',
         type: "scatter",
         name: 'Ventilators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -399,12 +425,13 @@ function runEnter() {
     var trace27 = {
         x: weeks,
         y: persons,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y27',
         type: "scatter",
         name: 'Personnel',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -412,12 +439,13 @@ function runEnter() {
     var trace28 = {
         x: weeks,
         y: sample_kits,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y28',
         type: "scatter",
         name: 'Sample Collecting Kits',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -425,12 +453,13 @@ function runEnter() {
     var trace29 = {
         x: weeks,
         y: lab_plat,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y29',
         type: "scatter",
         name: 'Lab Platform',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -441,11 +470,12 @@ function runEnter() {
     // define our plot layouts
     var layout = {
         height: 3500,
-        plot_bgcolor: 'rgba(228, 222, 249, 0.65)',
+        plot_bgcolor: 'rgba(228, 222, 249, 0.55)',
+        title: 'Total Orders per Week: June 10, 2020 to February 26, 2021',
         grid: {
-            rows: 15,
-            columns: 2,
-            subplots: [['xy','x2y16'],['xy2','x2y17'],['xy3', 'x2y18'],['xy4', 'x2y19'],['xy5', 'x2y20'],['xy6', 'x2y21'],['xy7', 'x2y22'],['xy8', 'x2y23'],['xy9', 'x2y24'],['xy10', 'x2y25'],['xy11', 'x2y26'],['xy12', 'x2y27'],['xy13', 'x2y28'],['xy14', 'x2y29'],['xy15']],
+            rows: 10,
+            columns: 3,
+            subplots: [['xy','x2y11', 'x3y21'],['xy2','x2y12', 'x3y22'],['xy3', 'x2y13', 'x3y23'],['xy4', 'x2y14', 'x3y24'],['xy5', 'x2y15', 'x3y25'],['xy6', 'x2y16', 'x3y26'],['xy7', 'x2y17', 'x3y27'],['xy8', 'x2y18', 'x3y28'],['xy9', 'x2y19', 'x3y29'],['xy10', 'x2y20']],
             roworder: 'bottom to top'}
     };
 
@@ -493,16 +523,17 @@ function runStart() {
     var lab_plat = filteredData.map(ppe => ppe["Lab Platform"]);
     var bedding_acc = filteredData.map(ppe => ppe["Bedding Accessories"]);
     var fit_test = filteredData.map(ppe => ppe["Fit Testing Supplies"]);
-    console.log(n95_resp);
+    
     // create traces
     var trace1 = {
         x: weeks,
         y: face_shields,
+        fill: 'tozeroy',
         type: "scatter",
         name: 'Face Shields (Disposable)',
         title: 'Face Shields (Disposable)',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -510,12 +541,13 @@ function runStart() {
     var trace2 = {
         x: weeks,
         y: surg_masks,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y2',
         type: "scatter",
         name: 'Surgical Masks',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -523,12 +555,13 @@ function runStart() {
     var trace3 = {
         x: weeks,
         y: fit_test,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y3',
         type: "scatter",
         name: 'Fit Testing Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -536,12 +569,13 @@ function runStart() {
     var trace4 = {
         x: weeks,
         y: cloth_masks,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y4',
         type: "scatter",
         name: 'Cloth Masks',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -549,12 +583,13 @@ function runStart() {
     var trace5 = {
         x: weeks,
         y: gowns,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y5',
         type: "scatter",
         name: 'Surgical or Examination Gowns',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -562,12 +597,13 @@ function runStart() {
     var trace6 = {
         x: weeks,
         y: gloves,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y6',
         type: "scatter",
         name: 'Examination Gloves',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -575,12 +611,13 @@ function runStart() {
     var trace7 = {
         x: weeks,
         y: n95_resp,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y7',
         type: "scatter",
         name: 'N-95 Respirators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -588,12 +625,13 @@ function runStart() {
     var trace8 = {
         x: weeks,
         y: hsanitizers,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y8',
         type: "scatter",
         name: 'Hand Sanitizers',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -601,12 +639,13 @@ function runStart() {
     var trace9 = {
         x: weeks,
         y: wipes,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y9',
         type: "scatter",
         name: 'Wipes',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -614,12 +653,13 @@ function runStart() {
     var trace10 = {
         x: weeks,
         y: other,
+        fill: 'tozeroy',
         xaxis: 'x',
         yaxis: 'y10',
         type: "scatter",
         name: 'Other / None of the above',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -627,12 +667,13 @@ function runStart() {
     var trace11 = {
         x: weeks,
         y: cleaning,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y11',
         type: "scatter",
         name: 'Cleaning Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -640,12 +681,13 @@ function runStart() {
     var trace12 = {
         x: weeks,
         y: swabs,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y12',
         type: "scatter",
         name: 'Swabs',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -653,12 +695,13 @@ function runStart() {
     var trace13 = {
         x: weeks,
         y: viral_testing,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y13',
         type: "scatter",
         name: 'Viral Testing Media',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -666,12 +709,13 @@ function runStart() {
     var trace14 = {
         x: weeks,
         y: pharms,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y14',
         type: "scatter",
         name: 'Pharmaceuticals',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -679,12 +723,13 @@ function runStart() {
     var trace15 = {
         x: weeks,
         y: shoe_covers,
-        xaxis: 'x',
+        fill: 'tozeroy',
+        xaxis: 'x2',
         yaxis: 'y15',
         type: "scatter",
         name: 'Shoe Covers',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -692,12 +737,13 @@ function runStart() {
     var trace16 = {
         x: weeks,
         y: test_kits,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y16',
         type: "scatter",
         name: 'Test Kits',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -705,12 +751,13 @@ function runStart() {
     var trace17 = {
         x: weeks,
         y: kn95_resp,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y17',
         type: "scatter",
         name: 'KN95 Respirators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -718,12 +765,13 @@ function runStart() {
     var trace18 = {
         x: weeks,
         y: coveralls,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y18',
         type: "scatter",
         name: 'Coveralls (Hospitals or EMS)',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -731,12 +779,13 @@ function runStart() {
     var trace19 = {
         x: weeks,
         y: med_equip,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y19',
         type: "scatter",
         name: 'Medical Equipment',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -744,12 +793,13 @@ function runStart() {
     var trace20 = {
         x: weeks,
         y: goggles,
+        fill: 'tozeroy',
         xaxis: 'x2',
         yaxis: 'y20',
         type: "scatter",
         name: 'Goggles',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -757,12 +807,13 @@ function runStart() {
     var trace21 = {
         x: weeks,
         y: bedding_acc,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y21',
         type: "scatter",
         name: 'Bedding Accessories',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -770,12 +821,13 @@ function runStart() {
     var trace22 = {
         x: weeks,
         y: lab_supp,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y22',
         type: "scatter",
         name: 'Lab Supplies',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -783,12 +835,13 @@ function runStart() {
     var trace23 = {
         x: weeks,
         y: beds_cots,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y23',
         type: "scatter",
         name: 'Beds/Cots',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -796,12 +849,13 @@ function runStart() {
     var trace24 = {
         x: weeks,
         y: body_bags,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y24',
         type: "scatter",
         name: 'Body Bags',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -809,12 +863,13 @@ function runStart() {
     var trace25 = {
         x: weeks,
         y: lab_kit,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y25',
         type: "scatter",
         name: 'Lab Kit',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -822,12 +877,13 @@ function runStart() {
     var trace26 = {
         x: weeks,
         y: vents,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y26',
         type: "scatter",
         name: 'Ventilators',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -835,12 +891,13 @@ function runStart() {
     var trace27 = {
         x: weeks,
         y: persons,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y27',
         type: "scatter",
         name: 'Personnel',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -848,12 +905,13 @@ function runStart() {
     var trace28 = {
         x: weeks,
         y: sample_kits,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y28',
         type: "scatter",
         name: 'Sample Collecting Kits',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -861,12 +919,13 @@ function runStart() {
     var trace29 = {
         x: weeks,
         y: lab_plat,
-        xaxis: 'x2',
+        fill: 'tozeroy',
+        xaxis: 'x3',
         yaxis: 'y29',
         type: "scatter",
         name: 'Lab Platform',
         line: {
-            color: 'rgb(119, 81, 68)',
+            color: 'rgb(82, 68, 102)',
             width: 1
         }
     };
@@ -877,11 +936,12 @@ function runStart() {
     // define our plot layouts
     var layout = {
         height: 3500,
-        plot_bgcolor: 'rgba(228, 222, 249, 0.65)',
+        plot_bgcolor: 'rgba(228, 222, 249, 0.55)',
+        title: 'Total Orders per Week: June 10, 2020 to February 26, 2021',
         grid: {
-            rows: 15,
-            columns: 2,
-            subplots: [['xy','x2y16'],['xy2','x2y17'],['xy3', 'x2y18'],['xy4', 'x2y19'],['xy5', 'x2y20'],['xy6', 'x2y21'],['xy7', 'x2y22'],['xy8', 'x2y23'],['xy9', 'x2y24'],['xy10', 'x2y25'],['xy11', 'x2y26'],['xy12', 'x2y27'],['xy13', 'x2y28'],['xy14', 'x2y29'],['xy15']],
+            rows: 10,
+            columns: 3,
+            subplots: [['xy','x2y11', 'x3y21'],['xy2','x2y12', 'x3y22'],['xy3', 'x2y13', 'x3y23'],['xy4', 'x2y14', 'x3y24'],['xy5', 'x2y15', 'x3y25'],['xy6', 'x2y16', 'x3y26'],['xy7', 'x2y17', 'x3y27'],['xy8', 'x2y18', 'x3y28'],['xy9', 'x2y19', 'x3y29'],['xy10', 'x2y20']],
             roworder: 'bottom to top'}
     };
 
@@ -889,5 +949,4 @@ function runStart() {
 
     // plot the charts to a div tag with id "plot" and "plot2"
     Plotly.newPlot("plot", data, layout, config);
-
 };
