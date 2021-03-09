@@ -7,15 +7,18 @@
 <h2>Core Folders and Notebooks Described:</h2>
 
 <h3>bubble_chart: </h3>
+<img src="https://github.com/stuhunter4/hunterStuff/blob/main/ReadMe/bubble_ca.jpg" alt="bubble_data">
 <p>Bubble chart exploring whether common claims about political differences in the United States, regarding an educational or urban-rural divide, exists among California counties.  Bubble chart generated using Plotly JavaScript graphing library.</p>
 <p><strong>bubble_data_crunch.ipynb</strong>Imports preprocessed census.gov data and 2016 presidential election data from the New York Times.  Data sets are manipulated and combined to export a list of dictionaries found in static/js/data.js for use in plotting.</p>
 <hr>
 <h3>census_facts: </h3>
+<img src="https://github.com/stuhunter4/hunterStuff/blob/main/ReadMe/census_facts.jpg" alt="census_data">
 <p>Project to emulate the QuickFacts page on census.gov by creating a table of data from the dropdown menu.  Data was collected from census.gov using Python API requests.</p>
 <p><strong>unemployment_crunch.ipynb: </strong>Import larger dataset of unemployment in California and process into a clean dataset for unemployment rate by county; for export.</p>
 <p><strong>Census_pd_melt.ipynb: </strong>Imports all census.gov data gathered using Python API requests to combine, format, and export census data for populating a table.</p>
 <hr>
 <h3>choropleth_map: </h3>
+<img src="https://github.com/stuhunter4/hunterStuff/blob/main/ReadMe/migration_map.jpg" alt="choropleth_data">
 <p>Explores migration flow from California to other states between 2010 and 2019, with data from census.gov.  Includes a Plotly generated choropleth map of the U.S. that updates from a dropdown menu, and a Plotly generated chart breaking down migration from California by age group.</p>
 <p>The data referenced in the visualizations was processed in a different repository's notebook.</p>
 <p><strong>choropleth_maker.ipynb: </strong>Contains previous work for creating a Python Plotly choropleth map of COVID-19 cases by county in California.  This format was not amenable to the JavaScript variant and preserved for future use.</p>
@@ -28,6 +31,7 @@
 <p>I update the data on this page every Wednesday; it takes less than 5 minutes to update with the help of my data_cruncher notebook.</p>
 <hr>
 <h3>covid_ppe: </h3>
+<img src="https://github.com/stuhunter4/hunterStuff/blob/main/ReadMe/ppe_charts.jpg" alt="ppe_data">
 <p>Project that looks at the change in total quantity filled for 29 varieties of personal protective equipment over time, by county in California.  Manipulated a 462MB dataset with over 8.8 million data entries into a 1.8MB dataset for plotting.  Twenty-nine stacked Plotly charts update through a dropdown menu.  The various notebooks are designed to process the source CSV dataset downloaded from California Open Data Portal.</p>
 <p><strong>ppe_cruncher.ipynb: </strong>Imports ppe dataset and calculates the total quantity filled each seven-day period per product, per county.  Creates ppe_crunched.csv, a version of the original dataset formatted for accessibility and visualizations.</p>
 <p><strong>ppe_charts.ipynb: </strong>Imports the processed dataset ppe_crunched.csv for final cleanup steps.  Function created to generate a chart for each ppe item, 29 in total, for county name provided.  A second function generates a single chart from the data, given a county and ppe specified.</p>
