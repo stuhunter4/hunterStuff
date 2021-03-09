@@ -21,6 +21,7 @@
 <p><strong>choropleth_maker.ipynb: </strong>Contains previous work for creating a Python Plotly choropleth map of COVID-19 cases by county in California.  This format was not amenable to the JavaScript variant and preserved for future use.</p>
 <hr>
 <h3>county_data: </h3>
+<img src="ReadMe/county_data.JPG" alt="county_data">
 <p>This space emulates a COVID-19 tracker on kqed.org.  Two Plotly generated charts and a table of data are updated from a dropdown menu, displaying the seven-day average for COVID-19 cases and deaths, per 100,000 individuals, for a selected county in California.  This metric has been the primary method of measuring COVID-19 trends by the state of California, and informs the level of COVID-19 related restrictions for a county.</p>
 <p>This folder also contains a resources folder for various CSV files used in notebooks and image files used on the website.</p>
 <p><strong>data_cruncher.ipynb: </strong>The purpose of this notebook is to streamline updates on a weekly basis by: importing the most recent case data downloaded, processing the dataset and exporting the new format for use in our charts and table.  As an aside, this notebook also contains Python for creating static charts for each county.</p>
