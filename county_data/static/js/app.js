@@ -28,6 +28,8 @@ function runEnter() {
 
     // filter() uses input as its argument
     var filteredData = tableData.filter(ca => ca.County === inputValue);
+    // filter() to create dataset for California only
+    var caliData = tableData.filter(ca => ca.County === "California");
     // test
     console.log(filteredData);
 
@@ -57,38 +59,78 @@ function runEnter() {
 
     // use the map method with the arrow function to return all the filtered average cases per 100,000.
     var rate = filteredData.map(county => county["cases per cap"]);
+    var cali_rate = caliData.map(county => county["cases per cap"]);
     // ..and for deaths per capita
     var drate = filteredData.map(county => county["deaths per cap"]);
+    var cali_drate = caliData.map(county => county["deaths per cap"]);
 
     // create traces
-    var trace = {
+    var trace1 = {
         x: weeks,
         y: rate,
+        name: inputValue,
+        type: "scatter"
+    };
+    var trace2 = {
+        x: weeks,
+        y: cali_rate,
+        opacity: 0.25,
+        marker: {
+            color: 'rgb(148, 103, 189)'
+        },
+        yaxis: 'y2',
+        name: "California",
         type: "scatter"
     };
 
-    var trace2 = {
+    var trace3 = {
         x: weeks,
         y: drate,
+        name: inputValue,
+        type: "scatter"
+    };
+    var trace4 = {
+        x: weeks,
+        y: cali_drate,
+        opacity: 0.25,
+        marker: {
+            color: 'rgb(148, 103, 189)'
+        },
+        yaxis: 'y2',
+        name: "California",
         type: "scatter"
     };
 
 
     // create the data arrays for our plots
-    var data = [trace];
-    var data2 = [trace2];
+    var data = [trace1, trace2];
+    var data2 = [trace3, trace4];
 
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
         xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
-        yaxis: { title: "Daily Rate per 100,000"}
+        yaxis: { title: "Daily Rate per 100,000"},
+        yaxis2: {
+            title: "Daily Rate per 100,000",
+            titlefont: {color: 'rgb(148, 103, 189)'},
+            tickfont: {color: 'rgb(148, 103, 189)'},
+            overlaying: 'y',
+            side: 'right'
+        }
     };
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
         xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
-        yaxis: { title: "Daily Deaths per 100,000"}
+        yaxis: { title: "Daily Deaths per 100,000"},
+        yaxis2: {
+            title: "Daily Deaths per 100,000",
+            titlefont: {color: 'rgb(148, 103, 189'},
+            tickfont: {color: 'rgb(148, 103, 189'},
+            overlaying: 'y',
+            side: 'right'
+        }
     };
 
     var config = {responsive: true}
@@ -105,6 +147,9 @@ function runStart() {
 
     // filter() uses Alameda, the first county, as its argument
     var filteredData = tableData.filter(ca => ca.County === firstCounty);
+    // filter() to create dataset for California only
+    var caliData = tableData.filter(ca => ca.County === "California");
+
     // test
     console.log(filteredData);
 
@@ -133,38 +178,77 @@ function runStart() {
 
     // use the map method with the arrow function to return all the filtered average cases per 100,000.
     var rate = filteredData.map(county => county["cases per cap"]);
+    var cali_rate = caliData.map(county => county["cases per cap"]);
     // ..and for deaths per capita
     var drate = filteredData.map(county => county["deaths per cap"]);
+    var cali_drate = caliData.map(county => county["deaths per cap"]);
 
     // create traces
-    var trace = {
+    var trace1 = {
         x: weeks,
         y: rate,
+        name: firstCounty,
         type: "scatter"
     };
-
     var trace2 = {
         x: weeks,
-        y: drate,
+        y: cali_rate,
+        opacity: 0.25,
+        marker: {
+            color: 'rgb(148, 103, 189)'
+        },
+        yaxis: 'y2',
+        name: "California",
         type: "scatter"
     };
 
+    var trace3 = {
+        x: weeks,
+        y: drate,
+        name: firstCounty,
+        type: "scatter"
+    };
+    var trace4 = {
+        x: weeks,
+        y: cali_drate,
+        opacity: 0.25,
+        marker: {
+            color: 'rgb(148, 103, 189)'
+        },
+        yaxis: 'y2',
+        name: "California",
+        type: "scatter"
+    };
 
     // create the data arrays for our plots
-    var data = [trace];
-    var data2 = [trace2];
+    var data = [trace1, trace2];
+    var data2 = [trace3, trace4];
 
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
-        xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
-        yaxis: { title: "Daily Rate per 100,000"}
+        xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
+        yaxis: {title: "Daily Rate per 100,000"},
+        yaxis2: {
+            title: "Daily Rate per 100,000",
+            titlefont: {color: 'rgb(148, 103, 189)'},
+            tickfont: {color: 'rgb(148, 103, 189)'},
+            overlaying: 'y',
+            side: 'right'
+        }
     };
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
-        xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
-        yaxis: { title: "Daily Deaths per 100,000"}
+        xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
+        yaxis: {title: "Daily Deaths per 100,000"},
+        yaxis2: {
+            title: "Daily Deaths per 100,000",
+            titlefont: {color: 'rgb(148, 103, 189'},
+            tickfont: {color: 'rgb(148, 103, 189'},
+            overlaying: 'y',
+            side: 'right'
+        }
     };
 
     var config = {responsive: true}
