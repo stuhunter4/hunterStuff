@@ -46,6 +46,10 @@
       background-color: #b8aec8;
     }
 
+    .lpurpc {
+      color: #b8aec8;
+    }
+
     .space {
       padding-left: 20px;
       padding-right: 20px;
@@ -115,16 +119,21 @@
                 <div class="col-sm-2">
                     <div class="well dpurp white">
                       <h2>Politics & Population</h2>
-                      <p>Sources:<a href="https://www.nytimes.com/elections/2016/results/president" target="_blank"> 2016 Presidential Election Results from the New York Times &raquo;</a></p>
-                      <p><a href="https://www.census.gov/programs-surveys/acs/" target="_blank">Population data from the American Community Survey 2014-2018 &raquo;</a></p>
+                      <p>Sources:</p>
+                      <p><a class="lpurpc" href="https://www.nytimes.com/elections/2016/results/president" target="_blank">2016 Election Results from the New York Times &raquo;</a></p>
+                      <p><a class="lpurpc" href="https://www.kaggle.com/unanimad/us-election-2020" target="_blank">2020 Election Results from Raphael Fontes@Kaggle &raquo;</a></p>
+                      <p><a class="lpurpc" href="https://www.census.gov/programs-surveys/acs/" target="_blank">Population data from the American Community Survey 2014-2018 &raquo;</a></p>
+                    </div>
+                    <div class="well">
+                      <p>In the past Presidential election, it was often observed that voters were divided along regional and educational lines. The so-called "urban-rural divide" is apparent among the 58 counties in California: as we approach population densities of 500 and higher the counties all voted Democratic. Conversely, counties with population densities of 20 and below vote Republican for the large majority. Interestingly, the smaller cities do not seem to be predictably for either party based on population density. There is a positive correlation with the proportion of the population with a college degree or higher. This education divide has also been noted in election results. Whether the level of education or other variable correlated to the regional divide is a causal factor is unexplained by the data present here. The size of each county point here reflects the total number of people.</p>
                     </div>
                 </div>
                 <div class="col-sm-10">
                     <div class="well">
-                        <h3>2016 Election Results by Population Density and Education</h3>
-                        <div id="bubble"></div>
-                        <br>
-                        <p>In the past Presidential election, it was often observed that voters were divided along regional and educational lines. The so-called "urban-rural divide" is apparent among the 58 counties in California: as we approach population densities of 500 and higher the counties all voted Democratic. Conversely, counties with population densities of 20 and below vote Republican for the large majority. Interestingly, the smaller cities do not seem to be predictably for either party based on population density. There is a positive correlation with the proportion of the population with a college degree or higher. This education divide has also been noted in election results. Whether the level of education or other variable correlated to the regional divide is a causal factor is unexplained by the data present here. The size of each county point here reflects the total number of people.  This project was a test in building a front page for data analysis and interactive visualizations.</p>
+                      <div id="bubble"></div>  
+                    </div>
+                    <div class="well">
+                      <div id="bubble2"></div>
                     </div>
                 </div>
             </div>
