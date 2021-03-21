@@ -878,6 +878,7 @@ function runStart() {
     // define our plot layouts
     var layout = {
         height: 3500,
+        paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(228, 222, 249, 0.55)',
         title: 'Quantity Filled per Week: June 10, 2020 to February 26, 2021',
         grid: {
