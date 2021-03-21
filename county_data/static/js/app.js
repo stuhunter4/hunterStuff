@@ -109,6 +109,8 @@ function runEnter() {
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
+        paper_bgcolor: 'rgba(245,246,249,1)',
+        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
         yaxis: { title: "Daily Rate per 100,000"},
         yaxis2: {
@@ -122,6 +124,8 @@ function runEnter() {
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
+        paper_bgcolor: 'rgba(245,246,249,1)',
+        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
         yaxis: { title: "Daily Deaths per 100,000"},
         yaxis2: {
@@ -227,6 +231,8 @@ function runStart() {
     // define our plot layouts
     var layout = {
         title: "Seven-Day Average COVID-19 Cases",
+        paper_bgcolor: 'rgba(245,246,249,1)',
+        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
         yaxis: {title: "Daily Rate per 100,000"},
         yaxis2: {
@@ -240,6 +246,8 @@ function runStart() {
 
     var layout2 = {
         title: "Seven-Day Average COVID-19 Deaths",
+        paper_bgcolor: 'rgba(245,246,249,1)',
+        plot_bgcolor: 'rgba(245,246,249,1)',
         xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
         yaxis: {title: "Daily Deaths per 100,000"},
         yaxis2: {
