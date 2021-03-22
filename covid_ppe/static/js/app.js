@@ -441,8 +441,9 @@ function runEnter() {
     // define our plot layouts
     var layout = {
         height: 3500,
+        paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(228, 222, 249, 0.55)',
-        title: 'Quantity Filled per Week: June 10, 2020 to February 26, 2021',
+        title: 'Quantity Filled per Week: June 10, 2020 to March 19, 2021',
         grid: {
             rows: 10,
             columns: 3,
@@ -494,7 +495,7 @@ function runStart() {
     var lab_plat = filteredData.map(ppe => ppe["Lab Platform"]);
     var bedding_acc = filteredData.map(ppe => ppe["Bedding Accessories"]);
     var fit_test = filteredData.map(ppe => ppe["Fit Testing Supplies"]);
-    
+
     // create traces
     var trace1 = {
         x: weeks,
@@ -880,7 +881,7 @@ function runStart() {
         height: 3500,
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(228, 222, 249, 0.55)',
-        title: 'Quantity Filled per Week: June 10, 2020 to February 26, 2021',
+        title: 'Quantity Filled per Week: June 10, 2020 to March 19, 2021',
         grid: {
             rows: 10,
             columns: 3,
@@ -892,4 +893,25 @@ function runStart() {
 
     // plot the charts to a div tag with id "plot" and "plot2"
     Plotly.newPlot("plot", data, layout, config);
+
+    // create a reference to the table body
+    var tbody = d3.select("tbody");
+    // remove any children from the table
+    tbody.html("");
+
+    // loop through filtered data and console.log each report object
+    data2.forEach(function(Report) {
+        console.log(Report);
+        // append one table row 'tr' for each report object
+        var row = tbody.append("tr");
+
+        // use 'Object.entries' to console.log each report value
+        Object.entries(Report).forEach(function([key, value]) {
+            console.log(key, value);
+            // use d3 to append 1 cell for each value in the report object (column)
+            var cell = row.append("td");
+            // use d3 to update each cell's text with report values
+            cell.text(value);
+        });
+    });
 };
