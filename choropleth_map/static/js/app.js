@@ -97,6 +97,13 @@ function runEnter() {
 
   var layout = {
     title: 'Migration From CA to Other States',
+    margin: {
+      l: 50,
+      r: 50,
+      b: 50,
+      t: 50,
+      pad: 4
+    },
     geo:{
         scope: 'usa',
         countrycolor: 'rgb(255, 255, 255)',
@@ -110,7 +117,7 @@ function runEnter() {
       }
   };
 
-  var config = {responsive: true}
+  var config = {responsive: true, displayModeBar: false}
 
   Plotly.newPlot('choromap', data, layout, config);
       
@@ -277,6 +284,13 @@ function runStart() {
 
   var layout2 = {
     title: 'Migration From CA to Other States',
+    margin: {
+      l: 50,
+      r: 50,
+      b: 50,
+      t: 50,
+      pad: 4
+    },
     geo:{
         scope: 'usa',
         countrycolor: 'rgb(255, 255, 255)',
@@ -290,7 +304,7 @@ function runStart() {
       }
   };
 
-  var config = {responsive: true}
+  var config = {responsive: true, displayModeBar: false}
 
   // plot both charts
   Plotly.newPlot('linechart', data, layout, config);

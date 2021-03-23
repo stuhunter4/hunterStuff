@@ -94,7 +94,7 @@ var layout2 = {
   }
 }
 
-var config = {responsive: true}
+var config = {responsive: true, displayModeBar: false}
 
 Plotly.newPlot('bubble', data1, layout1, config)
 Plotly.newPlot('bubble2', data2, layout2, config)

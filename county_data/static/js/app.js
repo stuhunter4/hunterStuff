@@ -138,7 +138,7 @@ function runEnter() {
         }
     };
 
-    var config = {responsive: true}
+    var config = {responsive: true, displayModeBar: false}
 
     // plot the charts to a div tag with id "plot" and "plot2"
     Plotly.newPlot("plot", data, layout, config);
@@ -268,7 +268,7 @@ function runStart() {
         }
     };
 
-    var config = {responsive: true}
+    var config = {responsive: true, displayModeBar: false}
 
     // plot the charts to a div tag with id "plot" and "plot2"
     Plotly.newPlot("plot", data, layout, config);
