@@ -50,7 +50,7 @@ var data2 = [{
 }];
 
 var layout1 = {
-    title: "2016 U.S. Election Results",
+    title: "2016 U.S. Election Results in California",
     //showlegend: false,
     hovermode: "closest",
     paper_bgcolor: 'rgba(245,246,249,1)',
@@ -72,7 +72,7 @@ var layout1 = {
     }
 }
 var layout2 = {
-  title: "2020 U.S. Election Results",
+  title: "2016 U.S. Election Results in Texas",
   //showlegend: false,
   hovermode: "closest",
   paper_bgcolor: 'rgba(245,246,249,1)',
