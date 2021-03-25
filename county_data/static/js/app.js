@@ -1,6 +1,6 @@
 // from data.js, assign data to a descriptive variable
 var tableData = data;
-var vaccines = vaccines;
+//var vaccines = vaccines;
 
 // create graphs and table upon opening page
 // function is at the bottom, a reappropriation of runEnter
@@ -112,7 +112,7 @@ function runEnter() {
         title: "Seven-Day Average COVID-19 Cases",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
+        xaxis: { title: "Weeks: January 1, 2020 - March 23, 2021" },
         yaxis: { title: "Daily Rate per 100,000"},
         yaxis2: {
             title: "Daily Rate per 100,000",
@@ -127,7 +127,7 @@ function runEnter() {
         title: "Seven-Day Average COVID-19 Deaths",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: { title: "Weeks: January 1, 2020 - March 16, 2021" },
+        xaxis: { title: "Weeks: January 1, 2020 - March 23, 2021" },
         yaxis: { title: "Daily Deaths per 100,000"},
         yaxis2: {
             title: "Daily Deaths per 100,000",
@@ -155,8 +155,8 @@ function runStart() {
     // filter() to create dataset for California only
     var caliData = tableData.filter(ca => ca.County === "California");
     // vaccine data
-    var vaxData = vaccines.filter(ca => ca.county === firstCounty);
-    var calivaxData = vaccines.filter(ca => ca.county === "California");
+    //var vaxData = vaccines.filter(ca => ca.county === firstCounty);
+    //var calivaxData = vaccines.filter(ca => ca.county === "California");
 
     // test
     console.log(filteredData);
@@ -191,10 +191,10 @@ function runStart() {
     var drate = filteredData.map(county => county["deaths per cap"]);
     var cali_drate = caliData.map(county => county["deaths per cap"]);
     // data for bar charts
-    var county_vax = vaxData.map(county => county["percent_full"]);
-    var cali_vax = calivaxData.map(county => county["percent_full"]);
-    console.log(county_vax[0]);
-    console.log(cali_vax[0]);
+    //var county_vax = vaxData.map(county => county["percent_full"]);
+    //var cali_vax = calivaxData.map(county => county["percent_full"]);
+    //console.log(county_vax[0]);
+    //console.log(cali_vax[0]);
 
     // create traces
     var trace1 = {
@@ -242,7 +242,7 @@ function runStart() {
         title: "Seven-Day Average COVID-19 Cases",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
+        xaxis: {title: "Weeks: January 1, 2020 - March 23, 2021" },
         yaxis: {title: "Daily Rate per 100,000"},
         yaxis2: {
             title: "Daily Rate per 100,000",
@@ -257,7 +257,7 @@ function runStart() {
         title: "Seven-Day Average COVID-19 Deaths",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: {title: "Weeks: January 1, 2020 - March 16, 2021" },
+        xaxis: {title: "Weeks: January 1, 2020 - March 23, 2021" },
         yaxis: {title: "Daily Deaths per 100,000"},
         yaxis2: {
             title: "Daily Deaths per 100,000",
