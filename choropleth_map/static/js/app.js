@@ -92,16 +92,25 @@ function runEnter() {
     locations: postal,
     z: x,
     text: res,
-    autocolorscale: true
+    colorscale: [
+      [0, 'rgb(242,240,247)'], [0.2, 'rgb(218,218,235)'],
+      [0.4, 'rgb(188,189,220)'], [0.6, 'rgb(158,154,200)'],
+      [0.8, 'rgb(117,107,177)'], [1, 'rgb(84,39,143)']
+    ],
+    colorbar: {
+      //title: 'Millions USD',
+      thickness: 9
+    }
+    //autocolorscale: true
   }];
 
   var layout = {
     title: 'Migration From CA to Other States',
     margin: {
-      l: 50,
-      r: 50,
-      b: 50,
-      t: 50,
+      l: 25,
+      r: 25,
+      b: 25,
+      t: 25,
       pad: 4
     },
     geo:{
@@ -279,16 +288,25 @@ function runStart() {
     locations: postal,
     z: e2010,
     text: res,
-    autocolorscale: true
+    colorscale: [
+      [0, 'rgb(242,240,247)'], [0.2, 'rgb(218,218,235)'],
+      [0.4, 'rgb(188,189,220)'], [0.6, 'rgb(158,154,200)'],
+      [0.8, 'rgb(117,107,177)'], [1, 'rgb(84,39,143)']
+    ],
+    colorbar: {
+      //title: 'Millions USD',
+      thickness: 9
+    }
+    //autocolorscale: true
   }];
 
   var layout2 = {
     title: 'Migration From CA to Other States',
     margin: {
-      l: 50,
-      r: 50,
-      b: 50,
-      t: 50,
+      l: 25,
+      r: 25,
+      b: 25,
+      t: 25,
       pad: 4
     },
     geo:{
