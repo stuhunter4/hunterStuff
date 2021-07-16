@@ -112,7 +112,7 @@ function runEnter() {
         title: "Seven-Day Average COVID-19 Cases",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: { title: "Weeks: February 1, 2020 - June 18, 2021" },
+        xaxis: { title: "Weeks: February 1, 2020 - July 09, 2021" },
         yaxis: { title: "Daily Rate per 100,000"},
         yaxis2: {
             title: "Daily Rate per 100,000",
@@ -127,7 +127,7 @@ function runEnter() {
         title: "Seven-Day Average COVID-19 Deaths",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: { title: "Weeks: February 1, 2020 - June 18, 2021" },
+        xaxis: { title: "Weeks: February 1, 2020 - July 09, 2021" },
         yaxis: { title: "Daily Deaths per 100,000"},
         yaxis2: {
             title: "Daily Deaths per 100,000",
@@ -242,7 +242,7 @@ function runStart() {
         title: "Seven-Day Average COVID-19 Cases",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: {title: "Weeks: February 1, 2020 - June 18, 2021" },
+        xaxis: {title: "Weeks: February 1, 2020 - July 09, 2021" },
         yaxis: {title: "Daily Rate per 100,000"},
         yaxis2: {
             title: "Daily Rate per 100,000",
@@ -257,7 +257,7 @@ function runStart() {
         title: "Seven-Day Average COVID-19 Deaths",
         paper_bgcolor: 'rgba(245,246,249,1)',
         plot_bgcolor: 'rgba(245,246,249,1)',
-        xaxis: {title: "Weeks: February 1, 2020 - June 18, 2021" },
+        xaxis: {title: "Weeks: February 1, 2020 - July 09, 2021" },
         yaxis: {title: "Daily Deaths per 100,000"},
         yaxis2: {
             title: "Daily Deaths per 100,000",
