@@ -19,7 +19,7 @@ def export_hosp(hosp_df):
         df['icu_average'] = df.icu_beds.rolling(window=7).mean()
         final_df = final_df.append(df)
 
-    final_df = final_df.fillna(0)
+    final_df = final_df.dropna()
 
     list_d = final_df.to_dict(orient='records')
     with open("static/js/hospital_data.js", "w") as file:

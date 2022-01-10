@@ -25,7 +25,7 @@ def export_case(cases_df):
         df["deaths_per_cap"] = round((df["average_deaths"]/df["population"]) * 100000, 3)
 
         weekly_df = weekly_df.append(df)
-    weekly_df = weekly_df.fillna(0)
+    weekly_df = weekly_df.dropna()
 
     first_date = weekly_df.date.unique().tolist()[0]
     last_date = weekly_df.date.unique().tolist()[-1]
