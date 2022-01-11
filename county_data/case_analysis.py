@@ -27,9 +27,6 @@ def export_case(cases_df):
         weekly_df = weekly_df.append(df)
     weekly_df = weekly_df.dropna()
 
-    first_date = weekly_df.date.unique().tolist()[0]
-    last_date = weekly_df.date.unique().tolist()[-1]
-
     list_d = weekly_df.to_dict(orient='records')
     with open("static/js/cases_data.js", "w") as file:
         file.write("var case_data = %s;" % list_d)
